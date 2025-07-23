@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name = "viewport" content="with = device-width, initial-scale=1.0">
+        <title>Welcome</title>
+        <link rel = "stylesheet" href= "contact_style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/fontawesome/4.7.0/css/font-awesome.min.css" >
+        
+    </head>
+
+    <body>
+        
+        <section class = "header">
+            <nav>
+                <div class = "nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="indexpt1.html">HOME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="">ACHIEVEMENTS</a></li>
+                        <li><a href="">EXPERIENCE</a></li>
+                        <li><a href="">RESUME</a></li>
+                        
+                    </ul>
+                </div>
+                <i class="fa fa-times" onclick="showMenu()"></i>
+            </nav> 
+        
+
+        
+        
+        </section>
+
+
+        <section class = "campus">
+            <h1>PROJECTS</h1>
+            <p>More listed here</p>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src = "images/gmail-logo.png">
+                    <div class = "layer">
+                        <h3>GMAIL</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src = "images/bg.jpg">
+                    <div class = "layer">
+                        <h3>LINKEDIN</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src = "images/bot.jpg">
+                    <div class = "layer">
+                        <h3>REDDIT BOT</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+        function hideMenu(){
+                navLinks.style.right="-200px"
+            }
+
+    </script>    
+
+    </body>
+</html>
