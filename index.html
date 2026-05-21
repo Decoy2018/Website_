@@ -1,113 +1,754 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta name = "viewport" content="with = device-width, initial-scale=1.0">
-        <title>trial</title>
-        <link rel = "stylesheet" href= "style.css">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"  integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous" >
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        
-        <section class = "header">
-            <nav>
-                <ul>                
-                <li><a href="index.html"> PROJECTS</a></li>
-                <li><a href="">SKILLS</a></li>
-                <li><a href="">EDUCATION</a></li>
-                <li><a href="">ACHIEVEMENTS</a></li>
-                </ul>
-            </nav>
-        <!-- <nav>
-            <i class="fa fa-times" onclick="showMenu()"></i>
-            <a href="about.html"> HOME</a>
-            <a href=""> PROJECTS</a>
-            <a href="">SKILLS</a>
-            <a href="">EDUCATION</a>
-            <a href="">ACHIEVEMENTS</a>
-            <i class="fa fa-bars" onclick="showMenu()"></i> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Kumar | CS @ Michigan State</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        </nav>    -->
-        
+<body>
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
 
-        <div class = "text-box">
-            <h1> BRUH BRUH</h1>
-            <p> bruh a</p>
-            <a href="" class="hero"> Bruh</a>
-        </div>
-        </section>
-
-        <section class = "course">
-            <h1>BRUH BRUH</h1>
-            <p>Bruh</p>
-            <div class = "row">
-                <div class = "course-col">
-                    <h3>BRUH BRUH</h3>
-                    <p>Aniket</p>               
-                </div>
-
-                <div class = "course-col">
-                    <h3>Hating BRUH BRUH</h3>
-                    <p>Cause of the late </p>               
-                </div>
-
-                <div class = "course-col">
-                    <h3>Hating BRUH BRUH</h3>
-                    <p>Caust as </p>               
-                </div>
-
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AK<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </section>
+        </div>
+    </nav>
 
-
-        <section class = "campus">
-            <h1>Niggers In Paris</h1>
-            <p>Niggers were in Paris </p>
-
-            <div class="row">
-                <div class="campus-col">
-                    <img src = "images/bruh.jpg">
-                    <div class = "layer">
-                        <h3>buh</h3>
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge"><span class="badge-dot"></span> Open to internships & opportunities</div>
+                    <h1>Aniket <span class="gradient-text">Kumar</span></h1>
+                    <h2>Full-Stack Engineer &amp; ML Enthusiast</h2>
+                    <p>CS undergraduate at Michigan State University building scalable mobile apps, backend APIs, and
+                        AI-powered products. Dean's List · 3.40 GPA · $18k Merit Scholar.</p>
+                    <div class="cta-group">
+                        <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Get in Touch</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://linkedin.com/in/aniket-kumar-08bb35237" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:kumara29@msu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-stats reveal">
+                    <div class="hero-stat-card">
+                        <span class="hero-stat-num gradient-text">3.40</span>
+                        <span class="hero-stat-label">GPA</span>
+                    </div>
+                    <div class="hero-stat-card">
+                        <span class="hero-stat-num gradient-text">4×</span>
+                        <span class="hero-stat-label">Dean's List</span>
+                    </div>
+                    <div class="hero-stat-card">
+                        <span class="hero-stat-num gradient-text">81</span>
+                        <span class="hero-stat-label">Credits</span>
+                    </div>
+                    <div class="hero-stat-card">
+                        <span class="hero-stat-num gradient-text">20+</span>
+                        <span class="hero-stat-label">Projects</span>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
-        <section class="facilities">
-            <h1>Dalits</h1>
-            <p>Dalits are bad</p>
-
-            <div class="row">
-                <div class="facilities-col">
-                    <img src="images/bg.png">
-                    <h3>BRUH BRUH</h3>
-                    <p>Ni</p>
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="container reveal">
+                <div class="section-header">
+                    <p class="section-eyebrow">Who I Am</p>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text glass-panel">
+                        <p>I'm a product-focused Computer Science undergraduate at Michigan State University with
+                            hands-on experience across the full software stack — from React Native mobile apps to
+                            TensorFlow deep learning models. I care about writing clean, scalable code that solves real
+                            problems.</p>
+                        <p>Currently, I serve as a <strong>Learning Assistant for CSE 331 (Data Structures &amp;
+                                Algorithms)</strong>, where I help students through grading, help-room sessions, and
+                            in-class support. I'm also building a startup app under direct faculty mentorship.</p>
+                        <p>Before MSU, I led technical and creative teams of 50+ at Sanskriti School and SMUN in New
+                            Delhi — running interschool competitions, designing branding systems, and directing video
+                            production. That design background shapes how I think about every product I build.</p>
+                        <div class="edu-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>B.S. Computer Science</h4>
+                                    <span>Michigan State University · GPA 3.40 / 4.0</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>Dean's List — 4 Semesters</h4>
+                                    <span>Fall '23 · Spring '24 · Spring '25 · Fall '25</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>Languages</h4>
+                                    <span>English (Fluent) · Hindi (Native) · German (Basic)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card glass-panel">
+                            <h3>$18k</h3>
+                            <p>Annual Merit Scholarship</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h3>50+</h3>
+                            <p>Team Members Led</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h3>3+</h3>
+                            <p>Years Tech Leadership</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h3>3</h3>
+                            <p>Languages Spoken</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
 
+        <!-- EXPERIENCE -->
+        <section id="experience" class="experience">
+            <div class="container reveal">
+                <div class="section-header">
+                    <p class="section-eyebrow">Where I've Worked</p>
+                    <h2 class="section-title">Experience</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="timeline">
 
-        
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-left">
+                            <div class="timeline-date">Jan 2026 – Present</div>
+                            <div class="timeline-badge current">Current</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Undergraduate Learning Assistant</h3>
+                            <h4>Michigan State University · East Lansing, MI</h4>
+                            <p>Assisting Professors Sebnem Onsay and Manni Liu in CSE 331 (Data Structures &amp;
+                                Algorithms). Responsible for grading complex algorithmic assignments, running help-room
+                                sessions, and providing in-class instructional support to help students master algorithm
+                                design and complexity analysis.</p>
+                        </div>
+                    </div>
 
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-left">
+                            <div class="timeline-date">Jan 2022 – Jan 2023</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Director of Technical Operations</h3>
+                            <h4>Sanskriti School · New Delhi, India</h4>
+                            <p>Led a cross-functional team of 50+ across technology and design. Organised interschool
+                                competitions with 100+ participants. Oversaw all promotional content, branding
+                                campaigns, and outreach using the Adobe Creative Suite.</p>
+                        </div>
+                    </div>
 
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-left">
+                            <div class="timeline-date">Sep 2021 – Aug 2022</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Director of Technical Operations</h3>
+                            <h4>Sanskriti Model United Nations (SMUN) · New Delhi, India</h4>
+                            <p>Managed a technical team end-to-end for SMUN's 10th edition. Designed a 20-page
+                                conference brochure, committee logos, Instagram content, placards, and the official
+                                edition logo. Contributed to website design and development.</p>
+                        </div>
+                    </div>
 
-        <script>
-            var navLinks = document.getElementById("navLinks")
-            function showMenu(){
-                navLinks.style.right = "0";
-            }
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-left">
+                            <div class="timeline-date">Jan 2021 – Aug 2021</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Additional Director of Technical Operations</h3>
+                            <h4>Sanskriti Model United Nations (SMUN) · New Delhi, India</h4>
+                            <p>Designed all promotional materials for INTER SMUN 2021 — invitations to 50+ schools,
+                                intro video, full conference brochure, and committee logos.</p>
+                        </div>
+                    </div>
 
-            function hideMenu(){
-                navLinks.style.right="-200px"
-            }
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-left">
+                            <div class="timeline-date">Mar 2021 – Mar 2023</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Head of Video Editing &amp; 3D Modelling</h3>
+                            <h4>ProjectBeta · New Delhi, India</h4>
+                            <p>Founded and led the 3D Modelling department. Simultaneously headed the Video Editing
+                                department of 20+ members, coordinating interschool competitions with 90+ participants.
+                                Personal achievements: 2nd place in 3D Design (RDPS), 3rd in AV Editing (Bharti Vidya
+                                Bhavan), 3rd in Photoshop (Cambridge School).</p>
+                        </div>
+                    </div>
 
-        </script>
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-left">
+                            <div class="timeline-date">Spring 2025</div>
+                            <div class="timeline-badge">Recognition</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Research Assistant Selection</h3>
+                            <h4>Facility for Rare Isotope Beams (FRIB) · MSU</h4>
+                            <p>Selected by Professor Paul Gueye for an undergraduate research position at FRIB.
+                                Participation was ultimately not possible due to budget constraints, but selection
+                                reflects strong academic standing.</p>
+                        </div>
+                    </div>
 
-    </body>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
+            <div class="container reveal">
+                <div class="section-header">
+                    <p class="section-eyebrow">What I've Built</p>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="project-filters" id="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+                    <button class="filter-btn" data-filter="finance">Finance</button>
+                    <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                </div>
+
+                <div class="project-grid">
+
+                    <div class="project-card glass-panel featured" data-category="mobile">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <span class="project-status live">In Progress</span>
+                        </div>
+                        <h3>Peer Counsellor Matchmaking App</h3>
+                        <p>Full-stack mobile application enabling students to connect with verified peer counsellors
+                            filtered by university, field, and country. Features secure auth, image upload, form
+                            validation, and a full admin approval dashboard.</p>
+                        <div class="tech-tags">
+                            <span>React Native</span><span>Firebase</span><span>Firestore</span><span>Expo</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel featured" data-category="mobile">
+                        <div class="project-header">
+                            <div class="project-icon blue"><i class="fas fa-rocket"></i></div>
+                            <span class="project-status live">In Progress</span>
+                        </div>
+                        <h3>Startup App</h3>
+                        <p>Production-grade startup application developed under direct faculty mentorship. Focuses on
+                            scalable TypeScript architecture, real-time data synchronization, and a polished user
+                            experience.</p>
+                        <div class="tech-tags">
+                            <span>React Native</span><span>TypeScript</span><span>Firebase</span><span>Expo Go</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="finance ai-ml">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        </div>
+                        <h3>Stock Price Predictor (LSTM)</h3>
+                        <p>Stacked LSTM neural network that forecasts stock prices from historical closing data. Trained
+                            with MinMaxScaler normalization across 60-day windows, then projects the next 7 days of
+                            price trajectory with actual-vs-predicted visualizations.</p>
+                        <div class="tech-tags">
+                            <span>TensorFlow</span><span>LSTM</span><span>yfinance</span><span>scikit-learn</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="finance">
+                        <div class="project-header">
+                            <div class="project-icon purple"><i class="fas fa-dice"></i></div>
+                        </div>
+                        <h3>Monte Carlo VaR Simulator</h3>
+                        <p>Portfolio risk analysis tool running 10,000 Monte Carlo simulations across a 5-asset
+                            portfolio (SPY, BND, QQQ, GLD, VTI). Computes log returns, covariance, and Value at Risk at
+                            95% confidence, visualizing the full gain/loss distribution.</p>
+                        <div class="tech-tags">
+                            <span>NumPy</span><span>SciPy</span><span>yfinance</span><span>Monte
+                                Carlo</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="finance">
+                        <div class="project-header">
+                            <div class="project-icon purple"><i class="fas fa-flask"></i></div>
+                        </div>
+                        <h3>MACD Backtesting Engine</h3>
+                        <p>Quantitative trading strategy backtester simulating MACD crossover signals on live AAPL data.
+                            Implements buy/sell logic based on MACD vs. signal line crossovers with 0.2% commission
+                            modeling and full performance reporting.</p>
+                        <div class="tech-tags">
+                            <span>Backtesting.py</span><span>TA-Lib</span><span>yfinance</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="finance">
+                        <div class="project-header">
+                            <div class="project-icon blue"><i class="fas fa-chart-pie"></i></div>
+                        </div>
+                        <h3>Portfolio Tracker</h3>
+                        <p>Real-time portfolio dashboard that fetches live prices for a custom equity basket (META,
+                            AMZN, GOOG, NVDA), computes total holdings value, and renders dual visualizations — a bar
+                            chart of position sizes and an interactive donut chart of allocation.</p>
+                        <div class="tech-tags">
+                            <span>yfinance</span><span>Matplotlib</span><span>Pandas</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="ai-ml">
+                        <div class="project-header">
+                            <div class="project-icon blue"><i class="fas fa-robot"></i></div>
+                        </div>
+                        <h3>AI Chatbot</h3>
+                        <p>Intent-based conversational chatbot built with a custom neural network. Uses NLP
+                            tokenization, lemmatization, and bag-of-words encoding to classify user input and return
+                            contextual responses from a trained Keras model.</p>
+                        <div class="tech-tags">
+                            <span>TensorFlow</span><span>Keras</span><span>NLTK</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="ai-ml">
+                        <div class="project-header">
+                            <div class="project-icon purple"><i class="fas fa-feather-alt"></i></div>
+                        </div>
+                        <h3>Shakespeare Text Generator</h3>
+                        <p>RNN trained on 500K characters of Shakespeare's works to generate original prose. Implements
+                            LSTM sequence modelling with temperature-controlled sampling to vary output from precise to
+                            exploratory.</p>
+                        <div class="tech-tags">
+                            <span>TensorFlow</span><span>LSTM</span><span>NLP</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="ai-ml cv">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-images"></i></div>
+                        </div>
+                        <h3>CIFAR-10 Image Classifier</h3>
+                        <p>Custom CNN trained on the CIFAR-10 dataset to classify images across 10 categories. Built
+                            with Conv2D and MaxPooling layers with data augmentation, achieving strong accuracy on
+                            held-out test data.</p>
+                        <div class="tech-tags">
+                            <span>TensorFlow</span><span>Keras</span><span>CNN</span><span>OpenCV</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="cv">
+                        <div class="project-header">
+                            <div class="project-icon purple"><i class="fas fa-video"></i></div>
+                        </div>
+                        <h3>Real-Time Object Detection</h3>
+                        <p>Live object detection using a pre-trained MobileNet SSD model via OpenCV's DNN module.
+                            Processes webcam input to identify 20 object classes in real time with bounding boxes and
+                            confidence scores overlaid on the feed.</p>
+                        <div class="tech-tags">
+                            <span>OpenCV</span><span>MobileNet SSD</span><span>DNN</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="cv">
+                        <div class="project-header">
+                            <div class="project-icon blue"><i class="fas fa-user-check"></i></div>
+                        </div>
+                        <h3>Face Recognition System</h3>
+                        <p>Real-time face verification using DeepFace and OpenCV. Captures webcam frames, compares faces
+                            against a reference image using deep learning embeddings, and displays match/no-match with
+                            multi-threaded processing for smooth performance.</p>
+                        <div class="tech-tags">
+                            <span>DeepFace</span><span>OpenCV</span><span>Threading</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="cv">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-palette"></i></div>
+                        </div>
+                        <h3>B&W Image Colorizer</h3>
+                        <p>Automatic colorization of grayscale images using a pre-trained deep neural network. Converts
+                            to LAB color space, predicts chrominance channels via a Caffe model, and merges with the
+                            lightness channel for full-color output.</p>
+                        <div class="tech-tags">
+                            <span>OpenCV DNN</span><span>Caffe Model</span><span>LAB Color</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="finance">
+                        <div class="project-header">
+                            <div class="project-icon blue"><i class="fas fa-filter"></i></div>
+                        </div>
+                        <h3>Stock Screener</h3>
+                        <p>Automated stock screening tool that ranks equities against the S&amp;P 500 benchmark using
+                            multi-factor filters: 150/200-day SMA trends, P/E ratio, PEG ratio, and 52-week price range
+                            to surface high-potential picks.</p>
+                        <div class="tech-tags">
+                            <span>yfinance</span><span>Pandas</span><span>Technical Analysis</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="finance">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
+                        </div>
+                        <h3>Buy/Sell Signal Generator</h3>
+                        <p>Trading signal system generating buy and sell alerts based on 30-day and 100-day SMA
+                            crossovers. Visualizes signals as scatter markers over price charts with dual SMA overlay
+                            for trend confirmation.</p>
+                        <div class="tech-tags">
+                            <span>yfinance</span><span>Matplotlib</span><span>SMA Crossover</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="finance">
+                        <div class="project-header">
+                            <div class="project-icon blue"><i class="fas fa-calculator"></i></div>
+                        </div>
+                        <h3>Black-Scholes Option Pricer</h3>
+                        <p>Implementation of the Black-Scholes model for European option pricing. Computes d1/d2 values
+                            and calculates both call and put prices using cumulative normal distribution functions.</p>
+                        <div class="tech-tags">
+                            <span>SciPy</span><span>Black-Scholes</span><span>Quant Finance</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="finance">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                        </div>
+                        <h3>Financial Statement Analyzer</h3>
+                        <p>Pulls income statements from the Financial Modeling Prep API and visualizes revenue vs. gross
+                            profit trends over multiple years. Generates comparative line charts for quick fundamental
+                            analysis of public companies.</p>
+                        <div class="tech-tags">
+                            <span>REST API</span><span>Matplotlib</span><span>Financial Data</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="ai-ml">
+                        <div class="project-header">
+                            <div class="project-icon blue"><i class="fas fa-home"></i></div>
+                        </div>
+                        <h3>House Price Prediction</h3>
+                        <p>ML model trained on housing datasets to predict property prices. Performs exploratory data
+                            analysis, feature engineering, and regression modeling to estimate home values based on
+                            location, size, and other attributes.</p>
+                        <div class="tech-tags">
+                            <span>Pandas</span><span>scikit-learn</span><span>Regression</span><span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="tools">
+                        <div class="project-header">
+                            <div class="project-icon purple"><i class="fas fa-terminal"></i></div>
+                        </div>
+                        <h3>Custom Programming Language</h3>
+                        <p>Built a programming language interpreter from scratch: lexer with tokenization (integers,
+                            floats, operators, parentheses), error handling with position tracking, and an interactive
+                            REPL for expression evaluation.</p>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Lexer</span><span>Tokenizer</span><span>Language Design</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel" data-category="tools">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-stopwatch"></i></div>
+                        </div>
+                        <h3>Runtime Complexity Analyzer</h3>
+                        <p>Automated grading tool that empirically verifies Big-O complexity of student code via log-log
+                            regression on timing data across input sizes. Deployed in production for CSE 331 at MSU.</p>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Algorithms</span><span>Regression</span><span>Data Analysis</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills">
+            <div class="container reveal">
+                <div class="section-header">
+                    <p class="section-eyebrow">What I Work With</p>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="skills-wrapper">
+                    <div class="skill-group glass-panel">
+                        <div class="skill-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>C#</span>
+                        </div>
+                    </div>
+                    <div class="skill-group glass-panel">
+                        <div class="skill-header">
+                            <i class="fas fa-layer-group"></i>
+                            <h3>Frameworks &amp; Libraries</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>React
+                                Native</span><span>Node.js</span><span>Express</span><span>Expo</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>scikit-learn</span><span>NLTK</span>
+                        </div>
+                    </div>
+                    <div class="skill-group glass-panel">
+                        <div class="skill-header">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Data &amp; Finance</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span><span>yfinance</span><span>TA-Lib</span><span>Monte
+                                Carlo</span><span>Black-Scholes</span>
+                        </div>
+                    </div>
+                    <div class="skill-group glass-panel">
+                        <div class="skill-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Databases &amp; Cloud</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Firebase</span><span>Firestore</span><span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-group glass-panel">
+                        <div class="skill-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools &amp; Design</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Git</span><span>Adobe
+                                XD</span><span>Photoshop</span><span>Illustrator</span><span>Premiere
+                                Pro</span><span>After Effects</span>
+                        </div>
+                    </div>
+                    <div class="skill-group glass-panel">
+                        <div class="skill-header">
+                            <i class="fas fa-sitemap"></i>
+                            <h3>CS Fundamentals</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Data Structures</span><span>Algorithms</span><span>OOP</span><span>Database
+                                Systems</span><span>Computer Architecture</span><span>Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="skill-group glass-panel">
+                        <div class="skill-header">
+                            <i class="fas fa-language"></i>
+                            <h3>Spoken Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>English — Fluent</span><span>Hindi — Native</span><span>German — Basic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="education">
+            <div class="container reveal">
+                <div class="section-header">
+                    <p class="section-eyebrow">Academic Background</p>
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="edu-grid">
+                    <div class="edu-main glass-panel">
+                        <div class="edu-header">
+                            <div>
+                                <h3>Michigan State University</h3>
+                                <p class="edu-degree">B.S. Computer Science · College of Engineering</p>
+                                <p class="edu-meta">Aug 2023 – Present &nbsp;·&nbsp; East Lansing, MI &nbsp;·&nbsp; GPA:
+                                    3.401 / 4.0 &nbsp;·&nbsp; 81 Credits</p>
+                            </div>
+                            <div class="edu-badges">
+                                <span class="edu-badge">Dean's List ×4</span>
+                                <span class="edu-badge highlight">$18k Scholar</span>
+                            </div>
+                        </div>
+                        <div class="coursework">
+                            <h4>Selected Coursework</h4>
+                            <div class="course-grid">
+                                <span>Algorithms &amp; Data Structures (CSE 331)</span>
+                                <span>Algorithm Engineering (CSE 431)</span>
+                                <span>Database Systems (CSE 480)</span>
+                                <span>Software Design (CSE 335)</span>
+                                <span>Computer Organization &amp; Architecture (CSE 320)</span>
+                                <span>Discrete Structures (CSE 260)</span>
+                                <span>Intro to Machine Learning (CSE 404)</span>
+                                <span>Mobile App Development (CSE 476)</span>
+                                <span>Computer Graphics (CSE 472)</span>
+                                <span>Probability &amp; Statistics (STT 351)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu-side">
+                        <div class="edu-secondary glass-panel">
+                            <i class="fas fa-school"></i>
+                            <h4>Sanskriti School</h4>
+                            <p>Secondary Education</p>
+                            <span>New Delhi, India · Until 2023</span>
+                        </div>
+                        <div class="honors-list glass-panel">
+                            <h4>Honours &amp; Awards</h4>
+                            <div class="honor-item">
+                                <i class="fas fa-trophy"></i>
+                                <div>
+                                    <strong>Dean's List</strong>
+                                    <span>4 semesters · College of Engineering</span>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <strong>Merit Scholarship</strong>
+                                    <span>$18,000 annual + $5,000 study abroad</span>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <i class="fas fa-flask"></i>
+                                <div>
+                                    <strong>FRIB Research Selection</strong>
+                                    <span>Selected by Prof. Paul Gueye · Spring 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="container reveal">
+                <div class="section-header">
+                    <p class="section-eyebrow">Let's Connect</p>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info glass-panel">
+                        <p class="contact-intro">I'm currently open to internships, part-time roles, and interesting
+                            project collaborations. Whether you have a question or just want to say hi — my inbox is
+                            always open.</p>
+                        <div class="contact-items">
+                            <a href="mailto:kumara29@msu.edu" class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">kumara29@msu.edu</span>
+                                </div>
+                            </a>
+                            <a href="tel:5178192929" class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <span class="contact-value">(517) 819-2929</span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/in/aniket-kumar-08bb35237" target="_blank"
+                                class="contact-item">
+                                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                                <div>
+                                    <span class="contact-label">LinkedIn</span>
+                                    <span class="contact-value">aniket-kumar-08bb35237</span>
+                                </div>
+                            </a>
+                            <div class="contact-item no-link">
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">East Lansing, MI, USA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-cta glass-panel">
+                        <div class="cta-inner">
+                            <i class="fas fa-paper-plane cta-icon"></i>
+                            <h3>Open to Opportunities</h3>
+                            <p>Internships · Research · Collaborations · Full-time (2027)</p>
+                            <a href="mailto:kumara29@msu.edu" class="btn btn-primary" style="margin-top:2rem;">
+                                Send a Message <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">AK<span>.</span></a>
+                <p>Engineering scalable software, one commit at a time.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/aniket-kumar-08bb35237" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:kumara29@msu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aniket Kumar &nbsp;·&nbsp; East Lansing, MI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
